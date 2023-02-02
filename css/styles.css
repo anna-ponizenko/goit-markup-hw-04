@@ -183,10 +183,10 @@ body {
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
-    
 
     background-color: var(--primary-brand-color);
     color:var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -289,6 +289,8 @@ img {
 .team-card {
     flex-basis: calc((100% - (var(--indent) * (var(--items) - 1))) / var (--items));
     background-color: var(--white-bg-clr);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -376,6 +378,8 @@ footer {
 .filter-btn:focus {
     color: var(--primary-white-color);
     background:var(--pressed-bg-clr);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: none;
 }
 
 .filter-btns {
@@ -392,9 +396,6 @@ footer {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-}
-.card-item {
-    flex-basis: calc((100% - (var(--indent) * 2)) / 3);
 }
 
 .card-img {
@@ -414,4 +415,15 @@ footer {
     margin-bottom: 8px;
         
     color:var(--title-text-color)
+}
+
+.card-item {
+    flex-basis: calc((100% - (var(--indent) * 2)) / 3);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.card-item:hover,
+.card-item:focus {
+    border: 0.5px solid var(--light-bg-clr);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
